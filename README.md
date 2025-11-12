@@ -31,7 +31,11 @@ You can deploy this flyer to any web hosting service:
 
 - **GitHub Pages**: Enable GitHub Pages in repository settings
 - **Netlify**: Drag and drop the folder to Netlify
-- **Vercel**: Connect your repository to Vercel
+- **Vercel**: Connect your repository to Vercel (recommended - includes optimized config)
+  1. Go to [vercel.com](https://vercel.com) and sign in
+  2. Click "Add New Project" and import this repository
+  3. Vercel will auto-detect the settings from `vercel.json`
+  4. Click "Deploy" - your site will be live in seconds!
 - **Any web server**: Upload all files to your web hosting
 
 ### Set Up SMS Automation
@@ -53,6 +57,7 @@ For now, the form simulates tip submission. In production, you would:
 - `index.html` - Main webpage with flyer content
 - `styles.css` - Styling and responsive design
 - `script.js` - JavaScript for form handling and social sharing
+- `vercel.json` - Vercel deployment configuration with security headers
 - `SMS_SETUP.md` - Instructions for setting up SMS automation
 - `README.md` - This file
 
