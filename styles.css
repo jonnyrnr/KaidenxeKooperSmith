@@ -1,0 +1,375 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+}
+
+/* Header Styles */
+.alert-header {
+    background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%);
+    color: white;
+    padding: 30px;
+    text-align: center;
+    position: relative;
+}
+
+.alert-header h1 {
+    font-size: 2.5em;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.urgent-badge {
+    display: inline-block;
+    background: #f39c12;
+    color: white;
+    padding: 10px 30px;
+    border-radius: 25px;
+    font-weight: bold;
+    font-size: 1.2em;
+    animation: pulse 2s infinite;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+}
+
+/* Main Content */
+.flyer-content {
+    padding: 40px;
+}
+
+.child-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.photo-placeholder {
+    background: linear-gradient(135deg, #3498db 0%, #2980b9 100%);
+    border-radius: 10px;
+    padding: 40px;
+    text-align: center;
+    color: white;
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.photo-text {
+    font-size: 3em;
+    font-weight: bold;
+    margin-bottom: 20px;
+    opacity: 0.8;
+}
+
+.photo-note {
+    font-size: 0.9em;
+    opacity: 0.9;
+}
+
+.details h2 {
+    color: #2c3e50;
+    font-size: 2em;
+    margin-bottom: 20px;
+    border-bottom: 3px solid #e74c3c;
+    padding-bottom: 10px;
+}
+
+.info-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+}
+
+.info-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px;
+    background: #f8f9fa;
+    border-radius: 8px;
+    border-left: 4px solid #3498db;
+}
+
+.info-item .label {
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+.info-item .value {
+    color: #555;
+}
+
+/* Contact Section */
+.contact-section {
+    margin-bottom: 40px;
+    padding: 30px;
+    background: #fff3cd;
+    border-radius: 10px;
+    border: 2px solid #f39c12;
+}
+
+.contact-section h3 {
+    color: #2c3e50;
+    font-size: 1.8em;
+    margin-bottom: 15px;
+}
+
+.contact-intro {
+    margin-bottom: 20px;
+    font-size: 1.1em;
+    color: #555;
+}
+
+.contact-methods {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.contact-box {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-box.emergency {
+    border: 3px solid #e74c3c;
+}
+
+.contact-box.police {
+    border: 3px solid #3498db;
+}
+
+.contact-box h4 {
+    margin-bottom: 15px;
+    color: #2c3e50;
+    font-size: 1.3em;
+}
+
+.phone-number {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #e74c3c;
+}
+
+/* Tip Form */
+.tip-form {
+    margin-bottom: 40px;
+    padding: 30px;
+    background: #e8f4f8;
+    border-radius: 10px;
+}
+
+.tip-form h3 {
+    color: #2c3e50;
+    font-size: 1.8em;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+.form-group input[type="tel"],
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #bdc3c7;
+    border-radius: 8px;
+    font-size: 1em;
+    font-family: inherit;
+    transition: border-color 0.3s;
+}
+
+.form-group input[type="tel"]:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #3498db;
+}
+
+.form-group input[type="checkbox"] {
+    margin-right: 8px;
+}
+
+.submit-btn {
+    background: linear-gradient(135deg, #27ae60 0%, #229954 100%);
+    color: white;
+    border: none;
+    padding: 15px 40px;
+    font-size: 1.1em;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+    width: 100%;
+}
+
+.submit-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(39, 174, 96, 0.4);
+}
+
+.submit-btn:active {
+    transform: translateY(0);
+}
+
+.form-message {
+    margin-top: 15px;
+    padding: 15px;
+    border-radius: 8px;
+    display: none;
+    font-weight: bold;
+}
+
+.form-message.success {
+    background: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+    display: block;
+}
+
+.form-message.error {
+    background: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+    display: block;
+}
+
+/* Share Section */
+.share-section {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.share-section h3 {
+    color: #2c3e50;
+    font-size: 1.8em;
+    margin-bottom: 15px;
+}
+
+.share-section p {
+    margin-bottom: 20px;
+    color: #555;
+    font-size: 1.1em;
+}
+
+.share-buttons {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.share-btn {
+    background: #3498db;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 8px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.share-btn:hover {
+    background: #2980b9;
+    transform: translateY(-2px);
+}
+
+/* Footer */
+footer {
+    background: #2c3e50;
+    color: white;
+    padding: 25px;
+    text-align: center;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+.timestamp {
+    font-size: 0.9em;
+    opacity: 0.8;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .alert-header h1 {
+        font-size: 1.8em;
+    }
+
+    .child-info {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-methods {
+        grid-template-columns: 1fr;
+    }
+
+    .flyer-content {
+        padding: 20px;
+    }
+
+    .share-buttons {
+        flex-direction: column;
+    }
+
+    .share-btn {
+        width: 100%;
+    }
+}
+
+@media print {
+    body {
+        background: white;
+    }
+
+    .container {
+        box-shadow: none;
+    }
+
+    .share-section,
+    .tip-form {
+        display: none;
+    }
+}

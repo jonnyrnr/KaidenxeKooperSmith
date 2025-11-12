@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Missing Child Alert - Kaidence Kooper Smith from Queen Creek, AZ">
+    <title>MISSING CHILD - Kaidence Kooper Smith</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header class="alert-header">
+            <h1>MISSING CHILD ALERT</h1>
+            <div class="urgent-badge">URGENT</div>
+        </header>
+
+        <main class="flyer-content">
+            <section class="child-info">
+                <div class="photo-placeholder">
+                    <div class="photo-text">PHOTO</div>
+                    <p class="photo-note">If you have a photo of Kaidence, please contact us</p>
+                </div>
+
+                <div class="details">
+                    <h2>Kaidence Kooper Smith</h2>
+                    
+                    <div class="info-grid">
+                        <div class="info-item">
+                            <span class="label">Last Seen:</span>
+                            <span class="value">Queen Creek, AZ</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="label">Age:</span>
+                            <span class="value">Please contact for details</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="label">Height:</span>
+                            <span class="value">Please contact for details</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="label">Weight:</span>
+                            <span class="value">Please contact for details</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="label">Hair:</span>
+                            <span class="value">Please contact for details</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="label">Eyes:</span>
+                            <span class="value">Please contact for details</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="contact-section">
+                <h3>Have Information?</h3>
+                <p class="contact-intro">If you have any information about Kaidence Kooper Smith, please contact us immediately.</p>
+                
+                <div class="contact-methods">
+                    <div class="contact-box emergency">
+                        <h4>Emergency</h4>
+                        <p class="phone-number">911</p>
+                    </div>
+                    <div class="contact-box police">
+                        <h4>Queen Creek Police</h4>
+                        <p class="phone-number">Non-Emergency Line</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="tip-form">
+                <h3>Submit a Tip via SMS</h3>
+                <form id="sms-tip-form">
+                    <div class="form-group">
+                        <label for="phone">Your Phone Number (for follow-up)</label>
+                        <input type="tel" id="phone" name="phone" placeholder="+1234567890" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="tip">Your Information/Tip</label>
+                        <textarea id="tip" name="tip" rows="5" placeholder="Please provide any information you have about Kaidence..." required></textarea>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>
+                            <input type="checkbox" id="anonymous" name="anonymous">
+                            Submit anonymously (we won't follow up)
+                        </label>
+                    </div>
+                    
+                    <button type="submit" class="submit-btn">Send Tip via SMS</button>
+                    <div id="form-message" class="form-message"></div>
+                </form>
+            </section>
+
+            <section class="share-section">
+                <h3>Help Spread the Word</h3>
+                <p>Share this flyer to help bring Kaidence home safely.</p>
+                <div class="share-buttons">
+                    <button class="share-btn" onclick="shareFlyer('facebook')">Share on Facebook</button>
+                    <button class="share-btn" onclick="shareFlyer('twitter')">Share on Twitter</button>
+                    <button class="share-btn" onclick="copyLink()">Copy Link</button>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>Please reach out with any information</p>
+            <p class="timestamp">Last Updated: <span id="last-updated"></span></p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
